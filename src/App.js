@@ -2,15 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import Navigation from './components/Navigation'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        Navegacion
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hola</p>
-      </header>
+      <Navigation titulo="Mi Primera Navegacion" />
+      <Navigation titulo="MenuDos" />
+      <Navigation titulo="Inicio" />
     </div>
   );
 }

@@ -6,6 +6,15 @@
   height: 40vmin;
 }
 
+.App-link {
+  color: red;
+  padding: 30%
+}
+
+nav {
+  background-color: brown
+}
+
 /* .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -16,7 +25,3 @@
   font-size: calc(10px + 2vmin);
   color: white;
 } */
-
-.App-link {
-  color: red;
-}
