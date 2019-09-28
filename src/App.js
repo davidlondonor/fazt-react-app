@@ -7,9 +7,18 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        Navegacion
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p>Hola</p>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+{/* 
+          Editarlo <code>src/App.js</code> Hola David
         </p>
         <a
           className="App-link"
@@ -18,10 +27,4 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+        </a> */}
