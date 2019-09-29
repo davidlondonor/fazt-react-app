@@ -24,7 +24,8 @@ class TodoForm extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        console.log('Encnadolo')
+        this.props.onAddTodo
+        console.log('Enviando Data a la lata')
     }
 
 
