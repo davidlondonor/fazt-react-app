@@ -1,25 +1,25 @@
 {
     "todos": [
         {
-            "title": "task 1",
+            "title": "Task 1",
             "responsible": "David",
             "description": "Lorem Ipsu",
             "priority": "low"
         },
         {
-            "title": "task 1",
+            "title": "Task 1",
             "responsible": "Judith",
             "description": "Lorem Ipsu 2",
             "priority": "medium"
         },
         {
-            "title": "task 3",
+            "title": "Task 3",
             "responsible": "Abuela",
             "description": "Lorem Ipsu 3",
             "priority": "high"
         },
         {
-            "title": "task 4",
+            "title": "Task 4",
             "responsible": "Yocito",
             "description": "Lorem Ipsu 3",
             "priority": "high"

@@ -10,11 +10,10 @@ class TodoForm extends Component {
             priority: 'low'
         };
         this.handleInput = this.handleInput.bind(this);
-        this.handleSubmit = this.handleInput.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleInput(e) {
-        console.log(e.target.value, e.target.name);
         const { value, name } = e.target;
         this.setState({
             [name]: value
@@ -24,10 +23,15 @@ class TodoForm extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.onAddTodo
-        console.log('Enviando Data a la lata')
+        console.log(this.state)
+        this.props.onAddTodo(this.state);
+        this.setState({
+            title: '',
+            responsible: '',
+            description: '',
+            priority: 'low'
+        });
     }
-
 
     render() {
         return (
@@ -45,7 +49,7 @@ class TodoForm extends Component {
                     <div className="form-group">
                         <input
                             type="text"
-                            name="title"
+                            name="responsible"
                             className="form-control"
                             placeholder="Responsible"
                             onChange={this.handleInput}
@@ -54,7 +58,7 @@ class TodoForm extends Component {
                     <div className="form-group">
                         <input
                             type="text"
-                            name="title"
+                            name="description"
                             className="form-control"
                             placeholder="Description"
                             onChange={this.handleInput}
@@ -63,7 +67,8 @@ class TodoForm extends Component {
                     <div className="form-group">
                         <select
                             name='priority'
-                            className='form-control'>
+                            className='form-control'
+                            onChange={this.handleInput}>
                             <option value="">Low</option>
                             <option value="">Medium</option>
                             <option value="">High</option>
